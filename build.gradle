@@ -18,19 +18,23 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-mail'
-    implementation 'javax.validation:validation-api:2.0.1.Final'
+
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.postgresql:postgresql'
-    //implementation 'org.modelmapper:modelmapper:2.4.4'
+    implementation 'com.paypal.sdk:rest-api-sdk:1.4.2'
+    implementation group: 'com.google.api-client', name: 'google-api-client', version: '2.2.0'
+    implementation group: 'com.google.apis', name: 'google-api-services-drive', version: 'v3-rev197-1.25.0'
+    implementation 'org.everit.credential:org.everit.credential.encryptor.api:1.0.0'
     compileOnly 'org.projectlombok:lombok:1.18.28'
     annotationProcessor 'org.projectlombok:lombok:1.18.28'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
-    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5:2.12.5'
 }
 
 
